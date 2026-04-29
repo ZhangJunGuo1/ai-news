@@ -1,0 +1,351 @@
+/* ==================== 亮色主题（默认） ==================== */
+:root[data-theme="light"] {
+  /* 背景色 */
+  --bg-page: #f5f7fa;
+  --bg-container: #ffffff;
+  --bg-card: #ffffff;
+  --bg-hover: #f0f2f5;
+  --bg-active: #e6f7ff;
+  --bg-input: #ffffff;
+  --bg-dialog: #ffffff;
+  --bg-sidebar: #ffffff;
+  --bg-header: #ffffff;
+  --bg-table-header: #fafafa;
+  --bg-table-row: #ffffff;
+  --bg-table-row-hover: #f5f7fa;
+  --bg-table-row-stripe: #fafafa;
+  --bg-dropdown: #ffffff;
+  --bg-tooltip: rgba(0, 0, 0, 0.75);
+  --bg-tag: #f0f2f5;
+  --bg-badge: #f56c6c;
+  --bg-loading: rgba(255, 255, 255, 0.9);
+
+  /* 边框色 */
+  --border-color: #e4e7ed;
+  --border-color-light: #ebeef5;
+  --border-color-lighter: #f2f6fc;
+  --border-color-extra-light: #f5f7fa;
+  --border-dark: #dcdfe6;
+
+  /* 文字色 */
+  --text-primary: #303133;
+  --text-regular: #606266;
+  --text-secondary: #909399;
+  --text-placeholder: #c0c4cc;
+  --text-disabled: #c0c4cc;
+  --text-white: #ffffff;
+
+  /* 主题色 */
+  --primary-color: #409eff;
+  --primary-color-light: #ecf5ff;
+  --primary-color-lighter: #f2f6fc;
+  --primary-color-dark: #337ecc;
+  --primary-color-text: #ffffff;
+
+  /* 功能色 */
+  --success-color: #67c23a;
+  --success-color-light: #f0f9eb;
+  --warning-color: #e6a23c;
+  --warning-color-light: #fdf6ec;
+  --error-color: #f56c6c;
+  --error-color-light: #fef0f0;
+  --info-color: #909399;
+  --info-color-light: #f4f4f5;
+
+  /* 阴影 */
+  --shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+  --shadow-heavy: 0 8px 24px 0 rgba(0, 0, 0, 0.2);
+  --shadow-box: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  /* 圆角 */
+  --radius-small: 4px;
+  --radius-base: 6px;
+  --radius-large: 8px;
+  --radius-round: 20px;
+  --radius-circle: 50%;
+
+  /* 间距 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-base: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+
+  /* 字体大小 */
+  --font-size-extra-small: 12px;
+  --font-size-small: 13px;
+  --font-size-base: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-extra-large: 20px;
+  --font-size-title: 24px;
+  --font-size-heading: 28px;
+
+  /* 过渡动画 */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+
+  /* 树形组件 */
+  --tree-node-hover-bg: var(--bg-hover);
+  --tree-node-active-bg: var(--bg-active);
+  --tree-node-text-color: var(--text-primary);
+  --tree-node-icon-color: var(--text-secondary);
+
+  /* 按钮 */
+  --btn-primary-bg: var(--primary-color);
+  --btn-primary-text: var(--text-white);
+  --btn-default-bg: var(--bg-container);
+  --btn-default-text: var(--text-regular);
+  --btn-default-border: var(--border-color);
+  --btn-success-bg: var(--success-color);
+  --btn-warning-bg: var(--warning-color);
+  --btn-danger-bg: var(--error-color);
+
+  /* 输入框 */
+  --input-border-color: var(--border-color);
+  --input-hover-border: var(--primary-color);
+  --input-focus-border: var(--primary-color);
+  --input-bg: var(--bg-input);
+  --input-text-color: var(--text-primary);
+  --input-placeholder-color: var(--text-placeholder);
+
+  /* 对话框 */
+  --dialog-bg: var(--bg-dialog);
+  --dialog-header-bg: var(--bg-container);
+  --dialog-header-text: var(--text-primary);
+  --dialog-header-border: var(--border-color-light);
+  --dialog-footer-border: var(--border-color-light);
+  --dialog-mask-bg: rgba(0, 0, 0, 0.5);
+
+  /* 消息提示 */
+  --message-bg: var(--bg-container);
+  --message-border: var(--border-color-light);
+  --message-shadow: var(--shadow-medium);
+  --message-success-bg: var(--success-color-light);
+  --message-success-border: var(--success-color);
+  --message-success-text: var(--success-color);
+  --message-warning-bg: var(--warning-color-light);
+  --message-warning-border: var(--warning-color);
+  --message-warning-text: var(--warning-color);
+  --message-error-bg: var(--error-color-light);
+  --message-error-border: var(--error-color);
+  --message-error-text: var(--error-color);
+  --message-info-bg: var(--info-color-light);
+  --message-info-border: var(--info-color);
+  --message-info-text: var(--info-color);
+
+  /* 表格 */
+  --table-border-color: var(--border-color-lighter);
+  --table-header-bg: var(--bg-table-header);
+  --table-header-text: var(--text-regular);
+  --table-row-bg: var(--bg-table-row);
+  --table-row-hover-bg: var(--bg-table-row-hover);
+  --table-row-stripe-bg: var(--bg-table-row-stripe);
+  --table-text-color: var(--text-primary);
+  --table-fixed-bg: var(--bg-container);
+
+  /* 分页 */
+  --pagination-bg: var(--bg-container);
+  --pagination-text: var(--text-regular);
+  --pagination-hover-bg: var(--bg-hover);
+  --pagination-hover-text: var(--primary-color);
+  --pagination-active-bg: var(--primary-color);
+  --pagination-active-text: var(--text-white);
+  --pagination-disabled-text: var(--text-placeholder);
+  --pagination-border: var(--border-color);
+
+  /* 加载动画 */
+  --loading-spinner-color: var(--primary-color);
+  --loading-text-color: var(--text-regular);
+  --loading-mask-bg: rgba(255, 255, 255, 0.9);
+
+  /* 空状态 */
+  --empty-text-color: var(--text-secondary);
+  --empty-icon-color: var(--text-placeholder);
+
+  /* 深色变体 */
+  --success-color-dark: #529b2e;
+  --warning-color-dark: #cf9236;
+  --error-color-dark: #dd6161;
+  --primary-color-darker: #2b6cb0;
+}
+
+/* ==================== 夜间主题 ==================== */
+:root[data-theme="dark"] {
+  /* 背景色 */
+  --bg-page: #0a0e1a;
+  --bg-container: #111827;
+  --bg-card: #1a2332;
+  --bg-hover: #1e293b;
+  --bg-active: rgba(59, 130, 246, 0.15);
+  --bg-input: #1e293b;
+  --bg-dialog: #1a2332;
+  --bg-sidebar: #111827;
+  --bg-header: #111827;
+  --bg-table-header: #1e293b;
+  --bg-table-row: #1a2332;
+  --bg-table-row-hover: #1e293b;
+  --bg-table-row-stripe: #151f2e;
+  --bg-dropdown: #1a2332;
+  --bg-tooltip: rgba(0, 0, 0, 0.85);
+  --bg-tag: #1e293b;
+  --bg-badge: #ef4444;
+  --bg-loading: rgba(17, 24, 39, 0.9);
+
+  /* 边框色 */
+  --border-color: #2d3748;
+  --border-color-light: #253041;
+  --border-color-lighter: #1e293b;
+  --border-color-extra-light: #1a2332;
+  --border-dark: #374151;
+
+  /* 文字色 */
+  --text-primary: #f1f5f9;
+  --text-regular: #cbd5e1;
+  --text-secondary: #94a3b8;
+  --text-placeholder: #64748b;
+  --text-disabled: #475569;
+  --text-white: #ffffff;
+
+  /* 主题色 */
+  --primary-color: #3b82f6;
+  --primary-color-light: rgba(59, 130, 246, 0.15);
+  --primary-color-lighter: rgba(59, 130, 246, 0.08);
+  --primary-color-dark: #2563eb;
+  --primary-color-text: #ffffff;
+
+  /* 功能色 */
+  --success-color: #10b981;
+  --success-color-light: rgba(16, 185, 129, 0.15);
+  --warning-color: #f59e0b;
+  --warning-color-light: rgba(245, 158, 11, 0.15);
+  --error-color: #ef4444;
+  --error-color-light: rgba(239, 68, 68, 0.15);
+  --info-color: #6b7280;
+  --info-color-light: rgba(107, 114, 128, 0.15);
+
+  /* 阴影 */
+  --shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
+  --shadow-medium: 0 4px 16px 0 rgba(0, 0, 0, 0.5);
+  --shadow-heavy: 0 8px 24px 0 rgba(0, 0, 0, 0.6);
+  --shadow-box: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  /* 圆角 */
+  --radius-small: 4px;
+  --radius-base: 6px;
+  --radius-large: 8px;
+  --radius-round: 20px;
+  --radius-circle: 50%;
+
+  /* 间距 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-base: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+
+  /* 字体大小 */
+  --font-size-extra-small: 12px;
+  --font-size-small: 13px;
+  --font-size-base: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-extra-large: 20px;
+  --font-size-title: 24px;
+  --font-size-heading: 28px;
+
+  /* 过渡动画 */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+
+  /* 树形组件 */
+  --tree-node-hover-bg: var(--bg-hover);
+  --tree-node-active-bg: var(--bg-active);
+  --tree-node-text-color: var(--text-primary);
+  --tree-node-icon-color: var(--text-secondary);
+
+  /* 按钮 */
+  --btn-primary-bg: var(--primary-color);
+  --btn-primary-text: var(--text-white);
+  --btn-default-bg: var(--bg-card);
+  --btn-default-text: var(--text-regular);
+  --btn-default-border: var(--border-color);
+  --btn-success-bg: var(--success-color);
+  --btn-warning-bg: var(--warning-color);
+  --btn-danger-bg: var(--error-color);
+
+  /* 输入框 */
+  --input-border-color: var(--border-color);
+  --input-hover-border: var(--primary-color);
+  --input-focus-border: var(--primary-color);
+  --input-bg: var(--bg-input);
+  --input-text-color: var(--text-primary);
+  --input-placeholder-color: var(--text-placeholder);
+
+  /* 对话框 */
+  --dialog-bg: var(--bg-dialog);
+  --dialog-header-bg: var(--bg-container);
+  --dialog-header-text: var(--text-primary);
+  --dialog-header-border: var(--border-color-light);
+  --dialog-footer-border: var(--border-color-light);
+  --dialog-mask-bg: rgba(0, 0, 0, 0.6);
+
+  /* 消息提示 */
+  --message-bg: var(--bg-card);
+  --message-border: var(--border-color);
+  --message-shadow: var(--shadow-medium);
+  --message-success-bg: var(--success-color-light);
+  --message-success-border: var(--success-color);
+  --message-success-text: var(--success-color);
+  --message-warning-bg: var(--warning-color-light);
+  --message-warning-border: var(--warning-color);
+  --message-warning-text: var(--warning-color);
+  --message-error-bg: var(--error-color-light);
+  --message-error-border: var(--error-color);
+  --message-error-text: var(--error-color);
+  --message-info-bg: var(--info-color-light);
+  --message-info-border: var(--info-color);
+  --message-info-text: var(--info-color);
+
+  /* 表格 */
+  --table-border-color: var(--border-color-lighter);
+  --table-header-bg: var(--bg-table-header);
+  --table-header-text: var(--text-secondary);
+  --table-row-bg: var(--bg-table-row);
+  --table-row-hover-bg: var(--bg-table-row-hover);
+  --table-row-stripe-bg: var(--bg-table-row-stripe);
+  --table-text-color: var(--text-primary);
+  --table-fixed-bg: var(--bg-container);
+
+  /* 分页 */
+  --pagination-bg: var(--bg-card);
+  --pagination-text: var(--text-regular);
+  --pagination-hover-bg: var(--bg-hover);
+  --pagination-hover-text: var(--primary-color);
+  --pagination-active-bg: var(--primary-color);
+  --pagination-active-text: var(--text-white);
+  --pagination-disabled-text: var(--text-placeholder);
+  --pagination-border: var(--border-color);
+
+  /* 加载动画 */
+  --loading-spinner-color: var(--primary-color);
+  --loading-text-color: var(--text-regular);
+  --loading-mask-bg: rgba(17, 24, 39, 0.9);
+
+  /* 空状态 */
+  --empty-text-color: var(--text-secondary);
+  --empty-icon-color: var(--text-placeholder);
+
+  /* 深色变体 */
+  --success-color-dark: #059669;
+  --warning-color-dark: #d97706;
+  --error-color-dark: #dc2626;
+  --primary-color-darker: #1d4ed8;
+}
